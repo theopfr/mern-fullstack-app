@@ -1,0 +1,21 @@
+.columnForm {
+    width: 100%;
+}
+
+.editorLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.requiredText {
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--main-red);
+}
+
+.requiredSmybol {
+    color: var(--main-red)
+}

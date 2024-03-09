@@ -1,0 +1,264 @@
+
+.navbar {
+  height: 50px;
+  background-color: white;
+}
+
+.navigationContent {
+  position: relative;
+  height: 100%;
+  width: 1000px;
+  margin-left: calc(50% - 500px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.homeButton {
+  background-color: transparent;
+  height: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  transition: ease-in-out 0.15s;
+}
+
+.homeButton:hover {
+  background-color: rgba(0, 0, 0, 0.041);
+  transition: ease-in-out 0.15s;
+}
+
+
+.navigationButtonGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+  padding: 10px;
+  padding-right: 0px;
+}
+
+
+.navigationButton, .loggedIn {
+  height: 100%;
+  width: auto;
+  background-color: var(--mid-blue);
+  color: var(--main-blue);
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: ease-in-out 0.15s;
+}
+
+.navigationButton:hover {
+  background-color: var(--main-blue);
+  color: white;
+  transition: ease-in-out 0.15s;
+}
+
+.navigationDelimiter {
+  width: 2px;
+  border-radius: 5px;
+  height: 90%;
+  background-color: var(--mid-blue);
+  margin: 5px;
+}
+
+.authButton, .loggedIn {
+  background-color: var(--main-blue);
+  color: var(--light-blue);
+  border-radius: 100px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.authButton:hover {
+  background-color: var(--dark-blue);
+}
+
+
+.logo {
+  height: 75%;
+}
+
+.title {
+  line-height: 100%;
+  font-size: 23px;
+  color: var(--text-color);
+}
+
+
+.contentContainer {
+  width: 1000px;
+  margin-left: calc(50% - 500px);
+}
+
+.landing {
+  display: flex;
+
+}
+
+.heroSection {
+  left: 0px;
+  margin: 0px;
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.callToAction {
+  margin: auto;
+  margin-left: 0px;
+  flex: 1;
+  z-index: 10;
+  width: 50%;
+}
+
+.slogan {
+  font-size: 50px;
+  color: var(--text-color);
+}
+
+.description {
+  font-size: 30px;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
+.actionButton {
+  border: none;
+  outline: none;
+  height: 45px;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: var(--main-blue);
+  transition: ease-in-out 0.15s;
+}
+
+.actionButton:hover {
+  background-color: var(--dark-blue);
+  transition: ease-in-out 0.15s;
+}
+
+
+.heroImageBox {
+  flex: 1;
+  height: 50vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+.heroImage {
+  height: 95%;
+  transition: 0.2s ease-out;
+}
+
+
+.backgroundGradient {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom left, transparent 60%, #3527c92a);
+  z-index: 0;
+}
+
+
+@media (max-width: 1200px) {
+  .navigationContent, .contentContainer {
+    width: 80%;
+    margin: auto;
+  }
+
+  .slogan {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 23px;
+  }
+
+  .heroImageBox {
+    height: 30vh;
+  }
+}
+
+
+
+
+@media (max-width: 800px) {
+  .navigationContent, .contentContainer {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .heroSection {
+    margin-top: 75px;
+  }
+
+  .heroImage {
+    height: 30vh;
+  }
+
+  .slogan {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 25px;
+  }
+
+  .actionButton {
+    height: 35px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .heroImageBox {
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .heroSection {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .callToAction {
+    width: auto;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .navigationDelimiter {
+    display: none;
+  }
+
+  .authButton {
+    display: none;
+  }
+}

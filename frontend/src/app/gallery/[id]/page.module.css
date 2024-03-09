@@ -1,0 +1,31 @@
+
+.singleArtist {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.errorBoxWrapper {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.singleArtistDisplay {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 10px 20px -15px rgb(180, 180, 180);
+    display: flex;
+    flex-direction: row;
+    transition: ease-in-out 0.125s;
+}
+
+.teaser {
+    font-size: 20px;
+    margin: 30px;
+    color: var(--mid-gray);
+}
+

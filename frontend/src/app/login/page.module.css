@@ -1,0 +1,81 @@
+
+.loginBox {
+    position: absolute;
+    height: 340px;
+    width: 400px;
+    top: calc(50% - 170px);
+    left: calc(50% - 200px);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px -15px rgb(83, 83, 83);
+    background-color: white;
+    padding: 20px;
+}
+
+
+.loginTitle {
+    color: var(--main-blue);
+}
+
+.registerLink {
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submitButton {
+    height: 40px;
+    width: auto;
+    margin: auto;
+    margin-top: 15px;
+    background-color: var(--main-blue);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    transition: ease-in-out 0.15s;
+  }
+  
+.submitButton:hover {
+    background-color: var(--dark-blue);
+    transition: ease-in-out 0.15s;
+}
+
+.submitButton:disabled {
+    background-color: var(--mid-gray);
+}
+
+.loginIcon {
+    width: 18px;
+}
+
+.errorMessage {
+    width: 100%;
+    margin-top: 7px;
+    font-size: 13px;
+    text-align: center;
+    color: var(--main-red);
+}
+
+
+@media (max-width: 600px) {
+    .loginBox {
+        width: 80%;
+        left: calc(10%);
+    }
+}
+  

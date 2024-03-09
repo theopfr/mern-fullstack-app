@@ -1,0 +1,194 @@
+.artistEditor {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editorPopup {
+    position: absolute;
+    height: auto;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px -15px rgb(83, 83, 83);
+    background-color: white;
+}
+
+.editorHeader {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 10px;
+}
+
+.artistName {
+    font-size: 23px;
+    color: var(--main-blue);
+}
+
+.closePopupButton {
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-blue);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.15s;
+}
+
+.closePopupButton:hover {
+    background-color: var(--dark-blue);
+    transition: ease-in-out 0.15s;
+}
+
+.closePopupButton:disabled {
+    background-color: var(--mid-gray);
+}
+
+.editorBox {
+    margin: 15px;    
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: auto;
+}
+
+.spanForm {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.starRatingBox {
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--mid-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.starRatingText {
+    text-align: center;
+    margin-top: -20px;
+    background-color: white;
+    color: rgb(173, 173, 173);
+    font-size: 15px;
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+
+.submitButton {
+    height: 40px;
+    width: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--main-blue);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    transition: ease-in-out 0.15s;
+  }
+  
+.submitButton:hover {
+    background-color: var(--dark-blue);
+    transition: ease-in-out 0.15s;
+}
+
+.submitButton:disabled {
+    background-color: var(--mid-gray);
+}
+
+.errorBoxWrapper {
+    position: absolute;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px -15px rgb(83, 83, 83);
+    background-color: white;
+}
+
+.backButton {
+    width: 100%;
+    margin-top: 5px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: var(--main-red);
+    transition: ease-in-out 0.15s;
+}
+
+.backButton:hover {
+    background-color: var(--dark-red);
+    transition: ease-in-out 0.15s;
+}
+
+
+.deleteText {
+    color: var(--main-red);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.deleteButton {
+    width: 100%;
+    margin-top: 5px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid var(--main-red);
+    color: var(--main-red);
+    font-weight: bold;
+    background-color: var(--light-red);
+    transition: ease-in-out 0.15s;
+}
+
+
+@media (max-width: 600px) {
+    .editorPopup {
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        margin: 20px;
+        min-height: 600px;
+    }
+
+    .errorBoxWrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

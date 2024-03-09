@@ -1,0 +1,37 @@
+version: "3.7"
+
+services:
+  mongo-db:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_DB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_DB_PASSWORD}
+    ports:
+      - "${MONGO_DB_PORT}:${MONGO_DB_PORT}"
+    volumes:
+      - ./initdb/:/docker-entrypoint-initdb.d
+
+  frontend:
+    image: elouvre-frontend:latest
+    environment:
+      NEXT_PUBLIC_BACKEND_HOST: ${BACKEND_HOST}
+      NEXT_PUBLIC_BACKEND_PORT: ${BACKEND_PORT}
+    ports:
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
+    depends_on:
+      - backend
+
+  backend:
+    image: elouvre-backend:latest
+    environment:
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      JWT_EXP_MINUTES: ${JWT_EXP_MINUTES}
+      BACKEND_PORT: ${BACKEND_PORT}
+      MONGO_DB_USER: ${MONGO_DB_USER}
+      MONGO_DB_PASSWORD: ${MONGO_DB_PASSWORD}
+      MONGO_DB_HOST: ${MONGO_DB_HOST}
+      MONGO_DB_PORT: ${MONGO_DB_PORT}
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    depends_on:
+      - mongo-db

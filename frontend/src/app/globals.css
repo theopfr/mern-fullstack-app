@@ -1,0 +1,85 @@
+
+:root {
+  --light-blue: #F8F5FF;
+  --mid-blue: #EFE9FF;
+  --main-blue: #7368EE;
+  --dark-blue: #5c51d6;
+  --text-color: #2F2E41;
+  --light-gray: rgb(245, 245, 245);
+  --mid-gray: rgb(209, 209, 209);
+  --dark-gray: rgb(110, 110, 110);
+  --light-red: rgb(255, 193, 208);
+  --main-red: #EC3842;
+  --dark-red: #d3363e;
+  --success-green: #21da93;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--light-blue);
+}
+
+body {
+  color: "red";
+  background: "red"
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: var(--main-blue);
+}
+
+label {
+  color: var(--text-color);
+}
+
+input, textarea {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--light-gray);
+  border: 1px solid var(--mid-gray);
+  padding: 10px;
+  margin-top: 5px;
+  color: var(--text-color);
+  transition: ease-in-out 0.15s;
+}
+
+input:hover, textarea:hover {
+  border-color: var(--main-blue);
+  transition: ease-in-out 0.15s;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--main-blue);
+  background-color: var(--mid-blue);
+  transition: ease-in-out 0.15s;
+}
+
+textarea {
+  font-family: inherit;
+  resize: none;
+  height: 75px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+input[type=date]::-webkit-datetime-edit {
+  color: var(--dark-gray);
+}
+
+.failedInput {
+  border-color: var(--main-red);
+  color: var(--main-red);
+}
+
