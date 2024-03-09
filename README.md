@@ -13,7 +13,8 @@
     <img src="doc/preview.png" width="700px"/>
 </p>
 
-You can find a short video demo [here](doc/demo.mp4)!
+You can find a short video demo [here](doc/demo.webm)!
+
 ---
 
 ## 🏃🏻‍♂️ How to run:
