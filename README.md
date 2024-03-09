@@ -3,18 +3,17 @@
     <img src="frontend/public/elouvre-logo.svg" width="100px"/>
 </p>
 
-# elourve - Art Beyond Walls
+# 🖌️ Elourve
 ### A digital art gallery created using the MERN stack
 
 ---
 
 ## 🎬 Demo
 <p align="center">
-    <img src="doc/preview.png" width="500px"/>
+    <img src="doc/preview.png" width="700px"/>
 </p>
 
-You can find a short video demo [here](doc/elouvre-demo.webm)!
-
+You can find a short video demo [here](doc/demo.mp4)!
 ---
 
 ## 🏃🏻‍♂️ How to run:
