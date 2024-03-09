@@ -13,7 +13,7 @@
     <img src="doc/preview.png" width="700px"/>
 </p>
 
-You can find a short video demo [here](doc/demo.webm)!
+You can find a short video demo [here](doc/demo.mp4)!
 
 ---
 
