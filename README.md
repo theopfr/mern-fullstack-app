@@ -1,12 +1,26 @@
+
+<p align="center">
+    <img src="frontend/public/elouvre-logo.svg" width="100px"/>
+</p>
+
 # elourve - Art Beyond Walls
-#### A digital art gallery
+### A digital art gallery created using the MERN stack
 
 ---
 
-## How to run:
+## 🎬 Demo
+<p align="center">
+    <img src="doc/preview.png" width="500px"/>
+</p>
+
+You can find a short video demo [here](doc/elouvre-demo.webm)!
+
+---
+
+## 🏃🏻‍♂️ How to run:
 First, make sure you have Docker and docker-compose installed.
 
-### Production:
+### 🚀 For production:
 
 #### 1. Create backend image:
 Navigate to the ``backend`` directory and execute:
@@ -40,7 +54,9 @@ Finally, to start all services, execute:
 docker-compose up
 ```
 
-### Development:
+---
+
+### 🔧 For development:
 
 #### 1. Start the database:
 Navigate to the ``development-db`` directory. There, create a ``.env`` file with the following variables:
